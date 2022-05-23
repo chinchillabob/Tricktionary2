@@ -1,0 +1,15 @@
+﻿@model Tricktionary.Models.Trick
+@{  
+    var imagePath= @"\Images\"+@Model.Name+".jpg";
+
+}
+@{
+    ViewBag.Title2 = "Show";
+}
+<h2>Displaying details for Tricks @Model.Id</h2>
+
+@Html.DisplayNameFor(m => m.Name) @Html.DisplayFor(m => m.Name)
+<br />
+@Html.DisplayNameFor(m => m.Description) @Html.DisplayFor(m => m.Description)
+<br />
+<img src="@imagePath"/>

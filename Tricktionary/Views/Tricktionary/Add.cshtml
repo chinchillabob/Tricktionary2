@@ -1,0 +1,14 @@
+﻿@model Tricktionary.Models.Trick
+@{
+    ViewBag.Title2 = "Add";
+}
+<form method="post"
+      enctype="multipart/form-data">
+    @Html.EditorForModel()
+    <br />
+    <br />
+    <input type="file" id="ImageData" name="ImageData" />
+    <br />
+    <br />
+    <input type="submit" value="Add new trick" />
+</form>
